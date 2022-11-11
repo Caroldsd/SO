@@ -19,7 +19,7 @@ public class Main {
 
         switch (opcao){
             case 1:
-                fcfs.definirProcessosETempo(processos);
+                fcfs.definirProcessosETempo(opcao, processos);
         }
     }
 

@@ -5,15 +5,15 @@ public class Fcfs {
     Scanner teclado = new Scanner(System.in);
     Random random = new Random();
 
-    int vetorFcfs [];
     int numeroProcessos;
     int tempoExecucao [];
     int tempoEspera [];
 
-    public void definirProcessosETempo(int numeroProcessos){
+    public void definirProcessosETempo(int opcao, int numeroProcessos){
         tempoExecucao = new int [numeroProcessos];
         tempoEspera = new int [numeroProcessos];
         for (int i = 0; i < numeroProcessos; i++){
+            if (opcao == 1) {
                 System.out.println("Digite o tempo de execucao do processo:");
                 tempoExecucao [i] = teclado.nextInt();
             } else {
@@ -32,19 +32,6 @@ public class Fcfs {
 
     VARIAVEL DE CONTROLE DE MENOR TEMPO DE EXECUCAO / TEMPO RESTANTE
      */
-    public void definirProcessosETempo(int numeroProcessos){
-        tempoExecucao = new int [numeroProcessos];
-        tempoEspera = new int [numeroProcessos];
-        for (int i = 0; i < numeroProcessos; i++){
-            if (){
-                System.out.println("Digite o tempo de execucao do processo:");
-                tempoExecucao [i] = teclado.nextInt();
-            } else {
-                tempoExecucao [i] = random.nextInt(10) + 1;
-            }
-        }
-        imprimirVetor();
-    }
 
     public void imprimirVetor(){
         for (int i = 0; i < numeroProcessos; i++){
