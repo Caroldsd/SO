@@ -7,7 +7,6 @@ public class EscalonamentoProcessos {
     static int n_processos = 3;
     int[] id = new int[n_processos];
 
-
     public static void main(String[] args) {
 
         int[] tempo_execucao = new int[n_processos];
@@ -38,7 +37,6 @@ public class EscalonamentoProcessos {
                     "\n8- Retribui valores iniciais" +
                     "\n9- Sair");
             opcao =  teclado.nextInt();
-
 
             if (opcao == 1) { //FCFS
                 FCFS(tempo_execucao, tempo_espera, tempo_restante, tempo_chegada);
@@ -99,8 +97,6 @@ public class EscalonamentoProcessos {
             tempo_restante[i] = tempo_execucao[i];
         }
     }
-
-
 
     public static void imprimir_processos(int[] tempo_execucao, int[] tempo_espera, int[] tempo_restante, int[] tempo_chegada, int[] prioridade){
         //Imprime lista de processos
@@ -221,7 +217,6 @@ public class EscalonamentoProcessos {
 
     }
 
-    //TODO
     //cada processo no estado "pronto" recebe uma prioridade
     public static void PRIORIDADE(boolean preemptivo, int[] execucao, int[] espera, int[] restante, int[] chegada, int[] prioridade){
         int[] tempo_execucao = execucao.clone();
@@ -286,7 +281,6 @@ public class EscalonamentoProcessos {
 
     }
 
-    //TODO
     public static void ROBIN(int[] execucao, int[] espera, int[] restante){
         int[] tempo_execucao = execucao.clone();
         int[] tempo_espera = espera.clone();
@@ -358,6 +352,4 @@ public class EscalonamentoProcessos {
             }
         }
     }
-
 }
-
