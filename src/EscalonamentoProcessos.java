@@ -10,7 +10,6 @@ public class EscalonamentoProcessos {
 
     public static void main(String[] args) {
 
-
         int[] tempo_execucao = new int[n_processos];
         int[] tempo_espera = new int[n_processos];
         int[] tempo_restante = new int[n_processos];
